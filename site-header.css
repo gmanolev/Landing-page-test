@@ -1,0 +1,124 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    height: 90vh;
+    background: url(./img/2.jpg)  center center no-repeat;
+    background-size: cover;
+    padding: 4rem;
+    padding-bottom: 6rem;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.header-section-top {
+    display: flex;
+    flex: 1 0 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: auto;
+}
+
+.header-section-bottom hgroup h6 {
+    text-transform: uppercase;
+    color:  rgb(246,188,18);
+    letter-spacing: 0.14rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.header-section-bottom hgroup h1 {
+    font-size: 3.4rem;
+    line-height: 1.1;
+} 
+
+.header-section-bottom p:before {
+    display: block;
+    content: '' ;
+    width: 2rem;
+    height: 2px;
+    background: rgb(246,188,18);
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.header-section-bottom p {
+    padding-bottom: 1rem;
+    
+}
+
+.site-title {
+    background: url(./img/logo.svg)  left no-repeat;
+    width: 2.5rem;
+}
+
+.site-title a {
+    display: block;
+    padding: 0;
+    text-indent: -300vw;
+    overflow: hidden;
+}
+
+.main-nav {
+    
+    display: none;
+    margin-left: auto;
+    
+}
+
+.main-nav ul {
+    display: flex;
+    
+}
+
+.site-header label {
+    display: flex;
+    padding-left: 1rem;
+    color: white;
+    line-height: 1;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.main-nav li {
+    display: block;
+    list-style: outside none;
+}
+
+.main-nav a{
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    padding: 0 0.5rem;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    color:  rgb(246,188,18);
+}
+
+#toggle-nav {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+}
+
+#toggle-nav:checked + .site-header .main-nav {
+    display: block;
+}
+
+.site-header label i.fa-times {
+    display: none;
+}
+
+#toggle-nav:checked + .site-header label i.fa-times {
+    display: block;
+    
+}
+
+#toggle-nav:checked + .site-header label i.fa-bars {
+    display: none;
+} 
+

@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font: 14px/1.5 Verdana, sans-serif;
+}
+
+body, input, textarea, table, th, td, select, option {
+    font: inherit;
+}
